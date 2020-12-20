@@ -1,0 +1,58 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(29, 28, 28);
+}
+
+#récipient {
+    background-color: rgb(214, 21, 85);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bloc {
+    background-color: rgb(15, 15, 15);
+    /*couleur arriere plan des 4 blocs*/
+    width: 49%;
+    /*largeur des bloc*/
+    margin: 6px;
+    /* la marge des bloc*/
+    height: 300px;
+    /* hauteur des bloc*/
+}
+
+#centre {
+    display: flex;
+    justify-content: center;
+    color: rgb(197, 187, 187);
+}
+
+h4 {
+    margin: 20px;
+    color: white;
+}
+
+button {
+    margin: 25px;
+    border-radius: 2px;
+    transition: 0.4s;
+    opacity: 0.6;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+
+.bouton1 {
+    float: left;
+    color: green;
+}
+
+.bouton2 {
+    float: right;
+    color: red;
+    transition: 0.4s;
+}

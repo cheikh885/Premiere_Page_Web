@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>ZONE METEOLOGIQUE</h1>
+    <script src="page.js"></script>
+    <div id="récipient">
+        <% meteo.map((meteo)=>{%>
+            <div class="bloc">
+                <h2 id="centre">
+                    <%= meteo.region %>
+                </h2>
+                <h4> Temperature :
+                    <%= meteo.temperature%>&deg;c </h4>
+                <h4> latitude :
+                    <%= meteo.position.lattitude %>
+
+                        <h4> longititude :
+                            <%= meteo.position.longititude %>
+                        </h4>
+                        <button class="bouton1" onclick="ouvreB()"> ouvrir </button>
+                        <button class="bouton2" onclick="fermeB()"> fermer </button>
+            </div>
+            <%})%>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
